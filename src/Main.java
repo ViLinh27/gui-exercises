@@ -1,22 +1,23 @@
-import javax.swing.*;
+import javax.swing.*;//imports swing library
 import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         //the main frame
-        JFrame frame = new JFrame("My first GUI in java");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300,300);
+        JFrame frame = new JFrame("My first GUI in java");//Top Title of Gui File ~A
+        //JFrame sounds like a class that helps you summon a gui~A
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Can't tell what this does ~A
+        frame.setSize(300,300);//Default size of file ~A
 
         //menubar with components
-        JMenuBar menuBar = new JMenuBar();
-        JMenu menu1 = new JMenu("FILE");
-        JMenu menu2 = new JMenu("HELP");
-        menuBar.add(menu1);
-        menuBar.add(menu2);
-        JMenuItem m11 = new JMenuItem("Open");
-        JMenuItem m22 = new JMenuItem("Save as");
-        JMenuItem m33 = new JMenuItem("Settings");
-        JMenuItem m44 = new JMenuItem("Preferences");
+        JMenuBar menuBar = new JMenuBar();//Summons a menu bar to frame it seems ~A
+        JMenu menu1 = new JMenu("FILE");//makes menu button ~A
+        JMenu menu2 = new JMenu("HELP");//maeks menu button ~A
+        menuBar.add(menu1);//adds menu buton to menu bar ~A
+        menuBar.add(menu2);//adds menu buton to menu bar ~A
+        JMenuItem m11 = new JMenuItem("Open");// Adds Drop Down Menu Item Option to menu1 Button ~A
+        JMenuItem m22 = new JMenuItem("Save as");// Adds Drop Down Menu Item Option to menu1 Button ~A
+        JMenuItem m33 = new JMenuItem("Settings");// Adds Drop Down Menu Item Option to menu2 Button ~A
+        JMenuItem m44 = new JMenuItem("Preferences");// Adds Drop Down Menu Item Option to menu2 Button ~A
         menu1.add(m11);
         menu1.add(m22);
         menu2.add(m33);
