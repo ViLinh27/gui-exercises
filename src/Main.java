@@ -5,7 +5,7 @@ public class Main {
         //the main frame
         JFrame frame = new JFrame("My first GUI in java");//Top Title of Gui File ~A
         //JFrame sounds like a class that helps you summon a gui~A
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Can't tell what this does ~A
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Helps actually clode the program ~A
         frame.setSize(300,300);//Default size of file ~A
 
         //menubar with components
@@ -34,6 +34,7 @@ public class Main {
         JPanel panel = new JPanel();//panel not visible in output
         JLabel label = new JLabel("Enter Text Here: ");
         JTextField tf = new JTextField(10);//accepts 10 characters here
+        //textbox ~A
         JButton send = new JButton("Send");
         JButton resetbtn = new JButton("Reset");
         panel.add(label);//components added using FLow Layout//single row layout
