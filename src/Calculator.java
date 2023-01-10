@@ -5,6 +5,14 @@ import java.awt.event.ActionListener;
 
 public class Calculator {
     public static void main(String[] args){//frontend
+        new ShowGUI();
+    }
+
+}
+
+class ShowGUI{
+
+    ShowGUI(){//constructor
         //main frame
         JFrame frame = new JFrame("Number Addition");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -34,8 +42,12 @@ public class Calculator {
         JButton btn2 =  new JButton("Clear");
         JButton btn3 = new JButton("Exit");
         JButton btn_sub = new JButton("Substract");
+        JButton btn_div = new JButton("Divide");
+        JButton btn_mult = new JButton("Multiply");
         panel2.add(btn);
         panel2.add(btn_sub);
+        panel2.add(btn_div);
+        panel2.add(btn_mult);
         panel2.add(btn2);
         panel2.add(btn3);
         panel2.setLayout(new GridLayout(2,2));
@@ -75,6 +87,26 @@ public class Calculator {
                 num1 = Float.parseFloat(tf1.getText());
                 num2 = Float.parseFloat(tf2.getText());
                 result = num1-num2;
+                tf3.setText(String.valueOf(result));
+            }
+        });
+        btn_div.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                float num1,num2,result;
+                num1 = Float.parseFloat(tf1.getText());
+                num2 = Float.parseFloat(tf2.getText());
+                result = num1/num2;
+                tf3.setText(String.valueOf(result));
+            }
+        });
+        btn_mult.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                float num1,num2,result;
+                num1 = Float.parseFloat(tf1.getText());
+                num2 = Float.parseFloat(tf2.getText());
+                result = num1*num2;
                 tf3.setText(String.valueOf(result));
             }
         });
